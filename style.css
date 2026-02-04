@@ -1,0 +1,98 @@
+body {
+  font-family: 'Inter', sans-serif;
+
+}
+
+
+/* Header */
+.header {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav {
+  max-width: 900px;
+  margin: auto;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav a:hover {
+  color: #2563eb;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Intro */
+.intro {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.intro h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.intro p {
+  color: #555;
+}
+
+/* Sections */
+.section {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Cards */
+.box {
+  background: white;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+/* Contact */
+.contact {
+  background: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 12px;
+  color: #666;
+  font-size: 14px;}
