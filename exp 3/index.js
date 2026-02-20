@@ -5,12 +5,21 @@ function changeLanguage() {
 let count = 1;
 
 function addItem() {
-  const ul = document.getElementById("dynamicList");
+  const input = document.getElementById("itemInput");
+  const text = input.value.trim();
 
+  if (text === "") {
+    alert("Please enter an item");
+    return;
+  }
+
+  const ul = document.getElementById("dynamicList");
   const li = document.createElement("li");
-  li.textContent = "List item " + count;
+
+  li.textContent = text;
 
   ul.appendChild(li);
 
-  count++;
+  input.value = ""; // clear input
 }
+
