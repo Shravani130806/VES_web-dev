@@ -22,4 +22,16 @@ function addItem() {
 
   input.value = ""; // clear input
 }
+function removeLastItem() {
+  const ul = document.getElementById("dynamicList");
+
+  if (ul.lastElementChild) {
+    ul.removeChild(ul.lastElementChild);
+  } else {
+    alert("List is already empty");
+  }
+}
+function changeBg(colorClass) {
+  document.body.className = colorClass + " text-gray-900";
+}
 
