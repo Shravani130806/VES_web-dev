@@ -1,0 +1,33 @@
+<h1 style="text-align:center;">Angular Form Demo</h1>
+<h2>Add New Item</h2>
+
+<form [formGroup]="itemForm" (ngSubmit)="addItem()">
+
+  <label>Title:</label><br>
+  <input type="text" formControlName="title"><br><br>
+
+  <div *ngIf="itemForm.controls['title'].invalid && itemForm.controls['title'].touched">
+    Title is required
+  </div>
+
+  <label>Description:</label><br>
+  <textarea formControlName="description"></textarea><br><br>
+
+  <div *ngIf="itemForm.controls['description'].invalid && itemForm.controls['description'].touched">
+    Description is required
+  </div>
+
+  <button type="submit" [disabled]="itemForm.invalid">Add Item</button>
+
+</form>
+
+<hr>
+
+<h2>Item List</h2>
+
+<ul>
+  <li *ngFor="let item of items">
+    <strong>{{ item.title }}</strong>
+    <p>{{ item.description }}</p>
+  </li>
+</ul>
